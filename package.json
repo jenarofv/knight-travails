@@ -1,0 +1,39 @@
+{
+  "name": "knight-travails",
+  "version": "1.0.0",
+  "description": "knight travail project for The Odin Project",
+  "homepage": "https://github.com/jenarofv/knight-travails#readme",
+  "bugs": {
+    "url": "https://github.com/jenarofv/knight-travails/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jenarofv/knight-travails.git"
+  },
+  "license": "ISC",
+  "author": "jenarofv",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "prepare": "husky && husky install"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.29.0",
+    "@babel/preset-env": "^7.29.0",
+    "@eslint/js": "^10.0.1",
+    "babel-jest": "^30.2.0",
+    "eslint": "^10.0.0",
+    "eslint-config-prettier": "^10.1.8",
+    "globals": "^17.3.0",
+    "husky": "^9.1.7",
+    "jest": "^30.2.0",
+    "lint-staged": "^16.2.7",
+    "prettier": "3.8.1"
+  },
+  "lint-staged": {
+    "**/*": "prettier --write --ignore-unknown",
+    "*.js": "eslint --cache --fix",
+    "*.{js,css,md}": "prettier --write"
+  }
+}
